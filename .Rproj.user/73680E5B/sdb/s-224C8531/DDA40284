@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "ui <- fluidPage(\n  title = \"Tweet Analysis with Watson\",\n  sidebarLayout(\n    sidebarPanel(\n      conditionalPanel(\n        'input.dataset === \"df\"',\n        checkboxGroupInput(\"show_vars\", \"Columns in df to show:\",\n                           names(df), selected = names(df))\n      )),\n    mainPanel(\n      textInput(\"text\", label = h3(\"Text input\"), value = \"Enter #tag or user or term\"),\n      hr(),\n      fluidRow(column(3, verbatimTextOutput(\"value\")))\n      tabsetPanel(\n        id = 'dataset',\n        tabPanel(\"df\", DT::dataTableOutput(\"mytable1\")))\n    )\n  )\n)",
+    "created" : 1504113247115.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "3108856633",
+    "id" : "DDA40284",
+    "lastKnownWriteTime" : 2338328576214720878,
+    "last_content_update" : 1504113400831,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
