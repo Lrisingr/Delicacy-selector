@@ -1,12 +1,13 @@
-# keys.R -- 
+# this is not the 'pro' way to store keys,but yeah who cares?
 
-# this is not the 'pro' way to store keys, but it's low barrier to entry for many 
 # newbs  http://blog.revolutionanalytics.com/2015/11/how-to-store-and-use-authentication-details-with-r.html
+
 # The watson.keys.load will let you modify this if you like
 
-# ALCHEMY is integrated in to NLU recently - AUTHENTICATION / CREDENTIALS  - Platinum
+# ALCHEMY is integrated in to NLU recently 
 
 # Conversation for CHATBOTS and stuff
+
 username_conversation <- "3979237a-0f1d-4d69-a729-6504a1879dc7"
 password_conversation <- "SqXHy5YjGrG6"
 uname_pswd_conversation = paste(username_conversation,":",password_conversation)

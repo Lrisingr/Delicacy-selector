@@ -7,24 +7,25 @@ source("twitterSearch.R")
 source("Utility_Functions.R")
 
 
-##sets CERT Global to make a CA Cert go away - http://stackoverflow.com/questions/15347233/ssl-certificate-failed-for-twitter-in-r
+# sets CERT Global to make a CA Cert go away 
+# http://stackoverflow.com/questions/15347233/ssl-certificate-failed-for-twitter-in-r
 
-options(RCurlOptions = list(cainfo = system.file("CurlSSL", "cacert.pem", package = "RCurl")))
-Sys.setlocale(locale="C") # error: input string 1 is invalid in this locale
-options(warn=-1) # careful - turns off warnings  
+housekeeping <- function(){
+  options(RCurlOptions = list(cainfo = system.file("CurlSSL", "cacert.pem", package = "RCurl")))
+  Sys.setlocale(locale="C") # error: input string 1 is invalid in this locale
+  options(warn=-1) # careful - turns off warnings  
+}
 
-watson.keys.display()
 
-me <- twitteR::getUser("sharavankoushik")
-length(tweets_harvey)
-tweets <- laply(tweets_harvey,function(t) t$getText())
-tweets<- clean.text(tweets)
+# me <- twitteR::getUser("sharavankoushik")
+# length(tweets_harvey)
+# tweets <- laply(tweets_harvey,function(t) t$getText())
+# tweets<- clean.text(tweets)
 
-Encoding(tweets) <- "UTF=8"
+#Encoding(tweets) <- "UTF=8"
 
 
 api_feature <- "TextGetCombinedData"
-uname_pswd_NLU
 output_mode <- "json"
 
 #Performing operations on the Tweet data passing it to the services offered by Watson

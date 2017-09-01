@@ -2,7 +2,7 @@
     "path" : "F:/R_Projects/Twitter_Trends",
     "sortOrder" : [
         {
-            "ascending" : false,
+            "ascending" : true,
             "columnIndex" : 2
         }
     ]
