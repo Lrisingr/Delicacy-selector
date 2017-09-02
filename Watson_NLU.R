@@ -24,14 +24,14 @@ give_me_a_json_damnit<- function(data_frame,bind_id_with_Signal,bind_id_with_Sig
       #Take the POST json and read the content as text or as default json
       Signal <- content(response)
       #Bind each tweet ID with the sentiments/entities/categories produced from Watson
-      
-      bind_id_with_Signal_to_df<-  do.call("rbind.fill", lapply(Signal, as.data.frame))
+      #bind_id_with_Signal= cbind(text_id,Signal)
+      new_SignalContent <- toJSON(Signal)
+      bind_id_with_Signal_to_df<- rbind(bind_id_with_Signal,c(text_id,new_SignalContent))
+      colnames(bind_id_with_Signal_to_df)[1]<- "Tweet_ID"
+      colnames(bind_id_with_Signal_to_df)[2]<- "JsonContent"
       
       #Just convert the Signal to JSON for future use 
-      
-      new_SignalContent <- toJSON(Signal)
-      
-      write(new_SignalContent,file = "feed.json",append = TRUE)
+      write(new_SignalContent,file = "feed_col.json",append = TRUE,sep = "")
       
       #cat(Signal, file=jsonFile, append=TRUE, sep = "\n")
       
