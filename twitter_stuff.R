@@ -3,11 +3,11 @@ library(twitteR)
 library(plyr)
 
 
-twitter_stuff<- function(searchTerm){
+twitter_stuff<- function(numTweets){
   #Setup the Twitter Account and pass the tokens
   setup_twitter_oauth(APIKey,APISecret,accessToken,accessTokenSecret)
   #input text "Dosa OR Dhosa OR #Dosa OR #Dhosa
-  tweets_list <- searchTwitter(searchTerm, n=3000,lang = "en")
+  tweets_list <- searchTwitter(searchString = "#Dosa OR Dosa", n=numTweets,lang = "en")
   tweets_text = laply(tweets_list, function(t) t$getText())
   tweets_clean <- clean.text(tweets_text)
   #convert the tweets_text object to a data frame

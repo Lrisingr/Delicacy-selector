@@ -32,3 +32,9 @@ uname_pswd_conversation = paste(username_conversation,":",password_conversation)
   APISecret = "SswRDFgryTQnpFZsqWHuTn8dZFt8l0Iqkn8NXA11yOSENbcEOC"
   accessToken= "67590362-X5tZo4D5HxEZEhNXwZyAh2aYkkShapfODD7nMmor1"
   accessTokenSecret = "rAw9N0igklgBmOpInLNdvrxGByogTHfaHObIzqWagJJN3"
+  
+  assign(APIKey,value = "APIKey",envir = .GlobalEnv)
+  assign(APISecret,value = "APISecret",envir = .GlobalEnv)
+  assign(accessToken,value = "accessToken",envir = .GlobalEnv)
+  assign(accessTokenSecret,value = "accessTokenSecret",envir = .GlobalEnv)
+  
