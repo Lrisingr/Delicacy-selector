@@ -1,3 +1,4 @@
+[
 {
  "usage": {
  "text_units": 1,
@@ -63,7 +64,7 @@
 } 
 },
 {
- "text": "hyderaba…",
+ "text": "hyderaba?",
 "sentiment": {
  "score":      0 
 },
@@ -92,7 +93,7 @@
 "label": "/home and garden" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -159,7 +160,7 @@
 "label": "/business and industrial" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -212,7 +213,7 @@
 "label": "/food and drink/food/candy and sweets" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -306,7 +307,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -335,7 +336,7 @@
 "label": "/style and fashion/accessories/scarves" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -388,7 +389,7 @@
 "label": "/food and drink" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -427,7 +428,7 @@
 "label": "/food and drink/food/candy and sweets" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -516,7 +517,7 @@
 "label": "/hobbies and interests/games/video and computer games" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -582,7 +583,7 @@
 } 
 },
 {
- "text": "lips…",
+ "text": "lips?",
 "sentiment": {
  "score":      0 
 },
@@ -633,7 +634,7 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -686,7 +687,7 @@
 "label": "/business and industrial/advertising and marketing/telemarketing" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -780,7 +781,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -809,7 +810,7 @@
 "label": "/style and fashion/accessories/scarves" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -898,7 +899,7 @@
 "label": "/food and drink/food/candy and sweets" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1009,7 +1010,7 @@
 "label": "/food and drink/food/candy and sweets" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1103,7 +1104,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -1132,11 +1133,11 @@
 "label": "/style and fashion/accessories/scarves" 
 } 
 ] 
-}
+},
 {
  "error": "not enough text for language id",
 "code": 422 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1175,7 +1176,7 @@
 "label": "/art and entertainment/radio" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1218,7 +1219,7 @@
 } 
 ],
 "categories": [] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1271,7 +1272,7 @@
 "label": "/style and fashion/body art" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1324,11 +1325,11 @@
 "label": "/shopping/toys/dolls" 
 } 
 ] 
-}
+},
 {
  "error": "not enough text for language id",
 "code": 422 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1395,7 +1396,7 @@
 "label": "/business and industrial/energy/oil" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1462,7 +1463,7 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1557,7 +1558,7 @@
 "label": "/hobbies and interests/games/video and computer games" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1640,7 +1641,7 @@
 "entities": [
  {
  "type": "Location",
-"text": "filmore and…",
+"text": "filmore and?",
 "sentiment": {
  "score":      0 
 },
@@ -1674,12 +1675,12 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "language": "zh",
 "error": "unsupported text language: zh",
 "code": 400 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1703,7 +1704,7 @@
 } 
 },
 {
- "text": "wheat flour…",
+ "text": "wheat flour?",
 "sentiment": {
  "score":      0 
 },
@@ -1746,7 +1747,7 @@
 "label": "/food and drink/food/candy and sweets" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1840,7 +1841,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -1869,7 +1870,7 @@
 "label": "/style and fashion/accessories/scarves" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -1936,7 +1937,7 @@
 "label": "/food and drink/food/candy and sweets" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2003,7 +2004,7 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2084,7 +2085,7 @@
 "label": "/travel/tourist destinations/theme parks" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2162,12 +2163,12 @@
 } 
 ],
 "categories": [] 
-}
+},
 {
  "language": "unknown",
 "error": "unsupported text language: unknown",
 "code": 400 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2234,7 +2235,7 @@
 "label": "/food and drink/desserts and baking" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2315,7 +2316,7 @@
 "label": "/food and drink" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2390,7 +2391,7 @@
 "label": "/hobbies and interests/games/video and computer games" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2430,7 +2431,7 @@
 ],
 "entities": [],
 "categories": [] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2454,7 +2455,7 @@
 "label": "/art and entertainment/movies and tv/movies" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2493,7 +2494,7 @@
 "label": "/food and drink" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2588,11 +2589,11 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "error": "not enough text for language id",
 "code": 422 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2676,7 +2677,7 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2743,7 +2744,7 @@
 "label": "/science/medicine/genetics" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2754,7 +2755,7 @@
 "keywords": [],
 "entities": [],
 "categories": [] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2806,7 +2807,7 @@
 } 
 },
 {
- "text": "variety…",
+ "text": "variety?",
 "sentiment": {
  "score":      0 
 },
@@ -2863,16 +2864,16 @@
 "label": "/food and drink/desserts and baking" 
 } 
 ] 
-}
+},
 {
  "error": "not enough text for language id",
 "code": 422 
-}
+},
 {
  "language": "ca",
 "error": "unsupported text language: ca",
 "code": 400 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -2939,7 +2940,7 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3006,7 +3007,7 @@
 "label": "/food and drink" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3059,7 +3060,7 @@
 "label": "/food and drink" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3083,7 +3084,7 @@
 } 
 },
 {
- "text": "lv we…",
+ "text": "lv we?",
 "sentiment": {
  "score":      0 
 },
@@ -3126,7 +3127,7 @@
 "label": "/society/crime/sexual offense/rape" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3249,12 +3250,12 @@
 "label": "/hobbies and interests/games/role playing games" 
 } 
 ] 
-}
+},
 {
  "language": "zh",
 "error": "unsupported text language: zh",
 "code": 400 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3321,11 +3322,11 @@
 "label": "/technology and computing/tech news" 
 } 
 ] 
-}
+},
 {
  "error": "not enough text for language id",
 "code": 422 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3378,7 +3379,7 @@
 "label": "/business and industrial/advertising and marketing/telemarketing" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3487,7 +3488,7 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3497,7 +3498,7 @@
 "language": "en",
 "keywords": [
  {
- "text": "ye sandwich ky…",
+ "text": "ye sandwich ky?",
 "sentiment": {
  "score":      0 
 },
@@ -3576,7 +3577,7 @@
 "label": "/home and garden/appliances/small appliances/toasters and toaster ovens" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3660,7 +3661,7 @@
 "label": "/technology and computing/consumer electronics/camera and photo equipment/telescopes" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3699,7 +3700,7 @@
 "label": "/finance" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3752,7 +3753,7 @@
 "label": "/business and industrial/advertising and marketing/marketing" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3819,7 +3820,7 @@
 "label": "/food and drink/food/candy and sweets" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -3928,7 +3929,7 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4022,7 +4023,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -4051,7 +4052,7 @@
 "label": "/style and fashion/accessories/scarves" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4077,7 +4078,7 @@
 ],
 "entities": [],
 "categories": [] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4130,7 +4131,7 @@
 "label": "/food and drink/desserts and baking" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4197,7 +4198,7 @@
 "label": "/science/mathematics/arithmetic" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4291,7 +4292,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -4320,7 +4321,7 @@
 "label": "/style and fashion/accessories/scarves" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4373,7 +4374,7 @@
 "label": "/food and drink" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4467,7 +4468,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -4496,7 +4497,7 @@
 "label": "/style and fashion/accessories/scarves" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4577,7 +4578,7 @@
 "label": "/food and drink" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4658,7 +4659,7 @@
 "label": "/food and drink/vegetarian" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4742,7 +4743,7 @@
 "label": "/hobbies and interests/games/board games and puzzles" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4766,7 +4767,7 @@
 "label": "/food and drink" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4860,7 +4861,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -4889,7 +4890,7 @@
 "label": "/style and fashion/accessories/scarves" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4942,11 +4943,11 @@
 "label": "/business and industrial/advertising and marketing/marketing" 
 } 
 ] 
-}
+},
 {
  "error": "not enough text for language id",
 "code": 422 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -4999,7 +5000,7 @@
 "label": "/business and industrial/advertising and marketing/telemarketing" 
 } 
 ] 
-}
+},
 {
  "usage": {
  "text_units": 1,
@@ -5260,7 +5261,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -5426,7 +5427,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -5689,7 +5690,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -6055,7 +6056,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -6204,7 +6205,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -6632,7 +6633,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -6862,7 +6863,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -7066,7 +7067,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -7446,7 +7447,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -7569,7 +7570,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -7773,7 +7774,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -8026,7 +8027,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -8153,7 +8154,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -8347,7 +8348,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -8821,7 +8822,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -9040,7 +9041,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -9163,7 +9164,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -9286,7 +9287,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -9573,7 +9574,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -9626,7 +9627,7 @@
 } 
 },
 {
- "text": "cantdiet cantresist…",
+ "text": "cantdiet cantresist?",
 "sentiment": {
  "score":      0 
 },
@@ -9957,7 +9958,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -10445,7 +10446,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -10759,7 +10760,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -11125,7 +11126,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -11284,7 +11285,7 @@
 } 
 },
 {
- "text": "daal baati churm…",
+ "text": "daal baati churm?",
 "sentiment": {
  "score":      0 
 },
@@ -11474,7 +11475,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -11597,7 +11598,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -11851,7 +11852,7 @@
 },
 {
  "type": "Location",
-"text": "andhras indian…",
+"text": "andhras indian?",
 "sentiment": {
  "score":      0 
 },
@@ -12032,7 +12033,7 @@
 } 
 },
 {
- "text": "mix…",
+ "text": "mix?",
 "sentiment": {
  "score":      0 
 },
@@ -12316,7 +12317,7 @@
 } 
 },
 {
- "text": "mandar bhide visit…",
+ "text": "mandar bhide visit?",
 "sentiment": {
  "score": 0.93808 
 },
@@ -12514,7 +12515,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -13153,7 +13154,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -13379,7 +13380,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -13586,7 +13587,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -13681,7 +13682,7 @@
 } 
 },
 {
- "text": "foodporn…",
+ "text": "foodporn?",
 "sentiment": {
  "score": 0.65318 
 },
@@ -13980,7 +13981,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -14383,7 +14384,7 @@
 } 
 },
 {
- "text": "h…",
+ "text": "h?",
 "sentiment": {
  "score":      0 
 },
@@ -14506,7 +14507,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -14685,7 +14686,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -14893,7 +14894,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -15369,7 +15370,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -15678,7 +15679,7 @@
 "entities": [
  {
  "type": "Location",
-"text": "hyderabad…",
+"text": "hyderabad?",
 "sentiment": {
  "score":      0 
 },
@@ -16267,7 +16268,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -16390,7 +16391,7 @@
 } 
 },
 {
- "text": "a…",
+ "text": "a?",
 "sentiment": {
  "score":      0 
 },
@@ -16565,7 +16566,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -16763,7 +16764,7 @@
 } 
 },
 {
- "text": "dosa batter this…",
+ "text": "dosa batter this?",
 "sentiment": {
  "score": 0.88653 
 },
@@ -17468,7 +17469,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -17563,7 +17564,7 @@
 } 
 },
 {
- "text": "mind…",
+ "text": "mind?",
 "sentiment": {
  "score":      0 
 },
@@ -17712,7 +17713,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -18466,7 +18467,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -18615,7 +18616,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -18896,7 +18897,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -19902,7 +19903,7 @@
 } 
 },
 {
- "text": "fitmeal breakfastinthecity eathealthy…",
+ "text": "fitmeal breakfastinthecity eathealthy?",
 "sentiment": {
  "score":      0 
 },
@@ -20039,7 +20040,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -20162,7 +20163,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -20285,7 +20286,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -20500,7 +20501,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -20649,7 +20650,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -20772,7 +20773,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -20962,7 +20963,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -21501,7 +21502,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -21624,7 +21625,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -21747,7 +21748,7 @@
 } 
 },
 {
- "text": "tast…",
+ "text": "tast?",
 "sentiment": {
  "score": 0.89384 
 },
@@ -22390,7 +22391,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -22486,7 +22487,7 @@
 } 
 },
 {
- "text": "chickpea sauceveggie vegan…",
+ "text": "chickpea sauceveggie vegan?",
 "sentiment": {
  "score": 0.54713 
 },
@@ -22676,7 +22677,7 @@
 } 
 },
 {
- "text": "horn…",
+ "text": "horn?",
 "sentiment": {
  "score":      0 
 },
@@ -22947,7 +22948,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -23940,7 +23941,7 @@
 } 
 },
 {
- "text": "backgro…",
+ "text": "backgro?",
 "sentiment": {
  "score": -0.8011 
 },
@@ -24184,7 +24185,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -24307,7 +24308,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -24374,7 +24375,7 @@
 } 
 },
 {
- "text": "expected…",
+ "text": "expected?",
 "sentiment": {
  "score": -0.68549 
 },
@@ -24497,7 +24498,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -24660,7 +24661,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -24753,3 +24754,4 @@
 } 
 ] 
 }
+]

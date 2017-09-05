@@ -33,20 +33,20 @@ ui <- fluidPage(
     )
     )
 
-
+searchTerm <- "#dosa OR dosa"
 # Define server logic required to draw a histogram
 server <- function(input, output) {
-  twitt_df <- twitter_stuff(1000)
+  twitt_df <- twitter_stuff(searchTerm,1000)
   twFeed_csv<- write.csv(twitt_df,file = "savedTweets.csv",append = TRUE)
   df = twitt_df[sample(nrow(twitt_df),500),]
   bind_Signal <- data.frame() #take tweet id from tweet dataframe and bind POST content with the tweet_id
   bind_Signal_to_df<-data.frame()
-    
   #choose columns to display
     jsonSignal<-give_me_a_json_damnit(df, bind_Signal, bind_Signal_to_df)
     
     output$table_summary<- DT::renderDataTable({DT::datatable(jsonSignal)})
-     output$table_tweets<- DT::renderDataTable({DT::datatable(df,options = list(lengthMenu = c(50, 300, 500)))})
+    output$table_tweets<- DT::renderDataTable({DT::datatable(df,
+                          options = list(lengthMenu = c(50, 300, 500)))})
      output$value <- renderPrint("Done") 
     }
 # Run the application 

@@ -1,8 +1,4 @@
 {
- "error": "not enough text for language id",
-"code": 422 
-}
-{
  "usage": {
  "text_units": 1,
 "text_characters": 98,
@@ -488,7 +484,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -748,7 +744,7 @@
 } 
 },
 {
- "text": "best authentic so…",
+ "text": "best authentic so?",
 "sentiment": {
  "score": 0.82345 
 },
@@ -815,7 +811,7 @@
 "language": "en",
 "keywords": [
  {
- "text": "bab perio…",
+ "text": "bab perio?",
 "sentiment": {
  "score": 0.51908 
 },
@@ -1100,7 +1096,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -1896,7 +1892,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -2019,7 +2015,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -2401,7 +2397,7 @@
 } 
 },
 {
- "text": "dosa batter this…",
+ "text": "dosa batter this?",
 "sentiment": {
  "score": 0.88653 
 },
@@ -2529,7 +2525,7 @@
 } 
 },
 {
- "text": "dos…",
+ "text": "dos?",
 "sentiment": {
  "score": 0.68537 
 },
@@ -3557,7 +3553,7 @@
 } 
 },
 {
- "text": "breakfastclub hungryhog foodgasm…",
+ "text": "breakfastclub hungryhog foodgasm?",
 "sentiment": {
  "score":      0 
 },
@@ -4250,7 +4246,7 @@
 "language": "en",
 "keywords": [
  {
- "text": "dosa mumbairain…",
+ "text": "dosa mumbairain?",
 "sentiment": {
  "score":      0 
 },
@@ -5056,7 +5052,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -5179,7 +5175,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -5297,7 +5293,7 @@
 } 
 },
 {
- "text": "chickpea sauceveggie vegan…",
+ "text": "chickpea sauceveggie vegan?",
 "sentiment": {
  "score": 0.54713 
 },
@@ -5501,7 +5497,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -5582,7 +5578,7 @@
 } 
 },
 {
- "text": "mandar bhide visit…",
+ "text": "mandar bhide visit?",
 "sentiment": {
  "score": 0.93808 
 },
@@ -6616,7 +6612,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -6744,7 +6740,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -7402,7 +7398,7 @@
 } 
 },
 {
- "text": "cantdiet cantresist…",
+ "text": "cantdiet cantresist?",
 "sentiment": {
  "score":      0 
 },
@@ -7690,7 +7686,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -8213,7 +8209,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -8412,7 +8408,7 @@
 } 
 },
 {
- "text": "tr…",
+ "text": "tr?",
 "sentiment": {
  "score":      0 
 },
@@ -8549,7 +8545,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -8837,7 +8833,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -9083,7 +9079,7 @@
 } 
 },
 {
- "text": "hyderaba…",
+ "text": "hyderaba?",
 "sentiment": {
  "score":      0 
 },
@@ -9376,7 +9372,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -9650,7 +9646,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -9868,7 +9864,7 @@
 } 
 },
 {
- "text": "tast…",
+ "text": "tast?",
 "sentiment": {
  "score": 0.89384 
 },
@@ -10041,7 +10037,7 @@
 } 
 },
 {
- "text": "area smtdhyderabad somuchtod…",
+ "text": "area smtdhyderabad somuchtod?",
 "sentiment": {
  "score": 0.66736 
 },
@@ -10160,7 +10156,7 @@
 } 
 },
 {
- "text": "back…",
+ "text": "back?",
 "sentiment": {
  "score":      0 
 },
@@ -10283,7 +10279,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -10569,7 +10565,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -10692,7 +10688,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -10759,7 +10755,7 @@
 } 
 },
 {
- "text": "great a…",
+ "text": "great a?",
 "sentiment": {
  "score": -0.56897 
 },
@@ -11401,7 +11397,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -11823,7 +11819,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -12461,7 +12457,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -12584,7 +12580,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -12774,7 +12770,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -13181,7 +13177,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -13679,7 +13675,7 @@
 } 
 },
 {
- "text": "dosa…",
+ "text": "dosa?",
 "sentiment": {
  "score": 0.58882 
 },
@@ -14060,7 +14056,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -14183,7 +14179,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -14306,7 +14302,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -14589,7 +14585,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -14684,7 +14680,7 @@
 } 
 },
 {
- "text": "foodporn…",
+ "text": "foodporn?",
 "sentiment": {
  "score": 0.65318 
 },
@@ -14930,7 +14926,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -15092,7 +15088,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -15220,7 +15216,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -15343,7 +15339,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -15480,7 +15476,7 @@
 } 
 },
 {
- "text": "eyebrows…",
+ "text": "eyebrows?",
 "sentiment": {
  "score": 0.70726 
 },
@@ -15699,7 +15695,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -16509,7 +16505,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -16648,7 +16644,7 @@
 } 
 },
 {
- "text": "weekend ht…",
+ "text": "weekend ht?",
 "sentiment": {
  "score": 0.8626 
 },
@@ -16771,7 +16767,7 @@
 } 
 },
 {
- "text": "pretty much everywh…",
+ "text": "pretty much everywh?",
 "sentiment": {
  "score": 0.79862 
 },
@@ -16894,7 +16890,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -17103,7 +17099,7 @@
 } 
 },
 {
- "text": "coursemeal…",
+ "text": "coursemeal?",
 "sentiment": {
  "score":      0 
 },
@@ -17248,7 +17244,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -17371,7 +17367,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -17788,7 +17784,7 @@
 } 
 },
 {
- "text": "pretty much everywh…",
+ "text": "pretty much everywh?",
 "sentiment": {
  "score": 0.79862 
 },
@@ -17937,7 +17933,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -18060,7 +18056,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -18192,7 +18188,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -18259,7 +18255,7 @@
 } 
 },
 {
- "text": "dosa batter this…",
+ "text": "dosa batter this?",
 "sentiment": {
  "score": 0.88653 
 },
@@ -18477,7 +18473,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -18841,7 +18837,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -19048,7 +19044,7 @@
 } 
 },
 {
- "text": "mix…",
+ "text": "mix?",
 "sentiment": {
  "score":      0 
 },
@@ -19198,7 +19194,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -19321,7 +19317,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -19484,7 +19480,7 @@
 } 
 },
 {
- "text": "old friendshttp…",
+ "text": "old friendshttp?",
 "sentiment": {
  "score": -0.48937 
 },
@@ -19654,7 +19650,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -19933,7 +19929,7 @@
 } 
 },
 {
- "text": "teamgary staffordand alisa…",
+ "text": "teamgary staffordand alisa?",
 "sentiment": {
  "score":      0 
 },
@@ -20319,7 +20315,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -20522,7 +20518,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -20992,7 +20988,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -21115,7 +21111,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -21394,7 +21390,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -21640,7 +21636,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -21693,7 +21689,7 @@
 } 
 },
 {
- "text": "dosaaboutthing drug se…",
+ "text": "dosaaboutthing drug se?",
 "sentiment": {
  "score": -0.77931 
 },
@@ -22116,7 +22112,7 @@
 } 
 },
 {
- "text": "dosa…",
+ "text": "dosa?",
 "sentiment": {
  "score": 0.58882 
 },
@@ -22239,7 +22235,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -22362,7 +22358,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -22538,7 +22534,7 @@
 } 
 },
 {
- "text": "vegetarian…",
+ "text": "vegetarian?",
 "sentiment": {
  "score":      0 
 },
@@ -23128,7 +23124,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -23251,7 +23247,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -23427,7 +23423,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -23603,7 +23599,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -23818,7 +23814,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -23941,7 +23937,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -24064,7 +24060,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -24333,7 +24329,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -24657,7 +24653,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -24780,7 +24776,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -25314,7 +25310,7 @@
 } 
 },
 {
- "text": "lips…",
+ "text": "lips?",
 "sentiment": {
  "score":      0 
 },
@@ -26140,7 +26136,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -26302,7 +26298,7 @@
 } 
 },
 {
- "text": "expected…",
+ "text": "expected?",
 "sentiment": {
  "score": -0.68549 
 },
@@ -26596,7 +26592,7 @@
 } 
 },
 {
- "text": "discount sheffie…",
+ "text": "discount sheffie?",
 "sentiment": {
  "score": -0.33904 
 },
@@ -26758,7 +26754,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -27023,7 +27019,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -27380,7 +27376,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -27531,7 +27527,7 @@
 } 
 },
 {
- "text": "lv we…",
+ "text": "lv we?",
 "sentiment": {
  "score":      0 
 },
@@ -27668,7 +27664,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -28322,7 +28318,7 @@
 } 
 },
 {
- "text": "p…",
+ "text": "p?",
 "sentiment": {
  "score": 0.59428 
 },
@@ -28425,7 +28421,7 @@
 } 
 },
 {
- "text": "sch…",
+ "text": "sch?",
 "sentiment": {
  "score":      0 
 },
@@ -28740,7 +28736,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -28835,7 +28831,7 @@
 } 
 },
 {
- "text": "mind…",
+ "text": "mind?",
 "sentiment": {
  "score":      0 
 },
@@ -29019,7 +29015,7 @@
 "language": "en",
 "keywords": [
  {
- "text": "coconut chutney",
+ "text": "coconut?chutney",
 "sentiment": {
  "score": 0.6251 
 },
@@ -29308,7 +29304,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -30218,7 +30214,7 @@
 } 
 },
 {
- "text": "streetfood…",
+ "text": "streetfood?",
 "sentiment": {
  "score":      0 
 },
@@ -30341,7 +30337,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -30468,7 +30464,7 @@
 },
 {
  "type": "Location",
-"text": "winummnextgendjhunt …",
+"text": "winummnextgendjhunt??",
 "sentiment": {
  "score": 0.49823 
 },
@@ -30659,7 +30655,7 @@
 } 
 },
 {
- "text": "foodporn…",
+ "text": "foodporn?",
 "sentiment": {
  "score": 0.65318 
 },
@@ -31093,7 +31089,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -31216,7 +31212,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -31297,7 +31293,7 @@
 } 
 },
 {
- "text": "variety…",
+ "text": "variety?",
 "sentiment": {
  "score":      0 
 },
@@ -31710,7 +31706,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -31834,7 +31830,7 @@
 } 
 },
 {
- "text": "art women…",
+ "text": "art women?",
 "sentiment": {
  "score": 0.56652 
 },
@@ -31988,7 +31984,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -32387,7 +32383,7 @@
 } 
 },
 {
- "text": "parthasa…",
+ "text": "parthasa?",
 "sentiment": {
  "score": 0.69259 
 },
@@ -32603,7 +32599,7 @@
 } 
 },
 {
- "text": "timel…",
+ "text": "timel?",
 "sentiment": {
  "score":      0 
 },
@@ -32931,7 +32927,7 @@
 } 
 },
 {
- "text": "assalamualaikum…",
+ "text": "assalamualaikum?",
 "sentiment": {
  "score": -0.47684 
 },
@@ -32998,7 +32994,7 @@
 } 
 },
 {
- "text": "f…",
+ "text": "f?",
 "sentiment": {
  "score": -0.62142 
 },

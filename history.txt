@@ -1,0 +1,512 @@
+fluidRow(column(3, verbatimTextOutput("value"))),
+tabsetPanel(id = 'dataset',
+tabPanel("table_summary", DT::dataTableOutput("table_summary")),
+tabPanel("df",DT::dataTableOutput("table_tweets"))
+)
+)
+)
+)
+# Define server logic required to draw a histogram
+server <- function(input, output) {
+twitt_df <- twitter_stuff(1000)
+twFeed_csv<- write.csv(twitt_df,file = "savedTweets.csv",append = TRUE)
+df = twitt_df[sample(nrow(twitt_df),500),]
+bind_Signal <- data.frame() #take tweet id from tweet dataframe and bind POST content with the tweet_id
+bind_Signal_to_df<-data.frame()
+#choose columns to display
+jsonSignal<-give_me_a_json_damnit(df, bind_Signal, bind_Signal_to_df)
+output$table_summary<- DT::renderDataTable({DT::datatable(jsonSignal)})
+output$table_tweets<- DT::renderDataTable({DT::datatable(df,options = list(lengthMenu = c(50, 300, 500)))})
+output$value <- renderPrint("Done")
+}
+# Run the application
+shinyApp(ui = ui, server = server)
+#add twitter keyword as input parameter from shiny textbox at later stage
+library(twitteR)
+library(plyr)
+twitter_stuff<- function(numTweets){
+#Setup the Twitter Account and pass the tokens
+setup_twitter_oauth(APIKey,APISecret,accessToken,accessTokenSecret)
+#input text "Dosa OR Dhosa OR #Dosa OR #Dhosa
+tweets_list <- twitteR::getUser(user = "@Deals4Every")
+#getUser<- twitteR::getUser("@Deals4Every")
+tweets_text = laply(tweets_list, function(t) t$getText())
+tweets_clean <- clean.text(tweets_text)
+#convert the tweets_text object to a data frame
+#make data frame
+df <- do.call("rbind", lapply(tweets_list, as.data.frame))
+df["text"] = tweets_clean
+return(df)
+}
+library(shiny)
+library(twitteR)
+library(plyr)
+library(httr)
+library(RJSONIO)
+source("../twitter_stuff.R")
+source("../Watson_NLU.R")
+# Define UI for application that draws a histogram
+ui <- fluidPage(
+title = "Tweet Analysis with Watson",
+sidebarLayout(
+sidebarPanel(
+conditionalPanel('input.dataset === "df"',
+checkboxGroupInput("show_vars",
+"Tweet DB columns",
+names(df),
+selected = names(df)))),
+mainPanel(
+textInput("text",
+label = h3("What do you want to search about?"),
+value = " "),
+actionButton(inputId = "action",label = "Go"),
+hr(),
+fluidRow(column(3, verbatimTextOutput("value"))),
+tabsetPanel(id = 'dataset',
+tabPanel("table_summary", DT::dataTableOutput("table_summary")),
+tabPanel("df",DT::dataTableOutput("table_tweets"))
+)
+)
+)
+)
+# Define server logic required to draw a histogram
+server <- function(input, output) {
+twitt_df <- twitter_stuff(1000)
+twFeed_csv<- write.csv(twitt_df,file = "savedTweets.csv",append = TRUE)
+df = twitt_df[sample(nrow(twitt_df),500),]
+bind_Signal <- data.frame() #take tweet id from tweet dataframe and bind POST content with the tweet_id
+bind_Signal_to_df<-data.frame()
+#choose columns to display
+jsonSignal<-give_me_a_json_damnit(df, bind_Signal, bind_Signal_to_df)
+output$table_summary<- DT::renderDataTable({DT::datatable(jsonSignal)})
+output$table_tweets<- DT::renderDataTable({DT::datatable(df,options = list(lengthMenu = c(50, 300, 500)))})
+output$value <- renderPrint("Done")
+}
+# Run the application
+shinyApp(ui = ui, server = server)
+#add twitter keyword as input parameter from shiny textbox at later stage
+library(twitteR)
+library(plyr)
+twitter_stuff<- function(searchTerm, numTweets){
+#Setup the Twitter Account and pass the tokens
+setup_twitter_oauth(APIKey,APISecret,accessToken,accessTokenSecret)
+#input text "Dosa OR Dhosa OR #Dosa OR #Dhosa
+tweets_list <- twitteR::searchTwitteR(searchString = searchTerm, n=numTweets,lang = "en")
+#getUser<- twitteR::getUser("@Deals4Every")
+tweets_text = laply(tweets_list, function(t) t$getText())
+tweets_clean <- clean.text(tweets_text)
+#convert the tweets_text object to a data frame
+#make data frame
+df <- do.call("rbind", lapply(tweets_list, as.data.frame))
+df["text"] = tweets_clean
+return(df)
+}
+View(mat)
+View(mat.df)
+mat[1]
+mat[1][1]
+mat[:1]
+mat[,:1]
+mat[,1:]
+mat[1:]
+mat$entities
+mat$entities[1]
+mat$entities[1].unlist()
+mat$entities[1]
+mat$entities[[1]
+]
+mat$entities[7]
+unlist(mat$entities[7])
+unlist(mat$entities[8])
+x <-unlist(mat$entities[8])
+as.data.frame(x)
+y<- data.frame(x)
+View(y)
+y<- do.call("rbind",lappy(x, as.data.frame)
+)
+y<- do.call("rbind",lapply(x, as.data.frame))
+y<- do.call("cbind",lapply(x, as.data.frame))
+y<- data.frame(x)
+transform(y)
+y<-transform(y)
+library(reshape2)
+foo<- cbind(ID=rownames(foo),foo)
+foo<- cbind(ID=rownames(y),y)
+melt(foo)
+y<- melt(foo)
+View(y)
+y<-data.frame()
+foo<-data.frame()
+x <-unlist(mat$entities[8])
+y<- as.data.frame(t(x))
+clear
+View(y)
+View(mat)
+View(mat.df)
+foo<-lapply(mat$keywords,FUN = function(x) unlist(x))
+tarzan<- as.data.frame(t(foo))
+View(tarzan)
+tarzan<- as.data.frame(foo)
+foo<-lapply(mat$keywords,FUN = function(x) unlist(x))
+tarzan<- as.data.frame(foo)
+foo<-lapply(mat$keywords,FUN = function(x) unlist(x))
+t(tarzan)
+t(tarzan)
+View(tarzan)
+foo[1]
+foo[2]
+foo[3]
+foo[4]
+mat$keywords[[1]]
+mat$keywords[[8]]
+mat$categories[[8]]
+mat$keywords[[8]]$text
+mat$keywords[[8]]$text[1]
+mat$keywords[[8]]
+id_supply<- function(){}
+id_supply<- function(){}
+id_supply<- function(){  }
+mat$keywords[[8]]$text[1]
+install.packages(c("hash", "hashFunction", "hashids", "hashmap"))
+h<- hash::hash()
+hash::values(h,c=(mat$keywords[[8]]$text[1], mat$keywords[[8]]$text[2]))
+hash::values(h,c=(mat$keywords[[8]]$text[1]))
+mr<- hash::values(h,c=(mat$keywords[[8]]$text[1]))
+mr
+h <- hash( keys=letters, values=1:26 )
+library(hash)
+h <- hash( keys=letters, values=1:26 )
+h
+mat$keywords[[8]]$text[1]
+id_supply <- function(df){
+arr <- df$keywords
+set.seed(42)
+word_vector <- vector()
+for(i in 1:length(arr)){
+word_vector<- df$keywords[[i]]
+}
+return(word_vector)
+}
+id_supply(mat)
+id_supply(mat)
+debugSource('F:/R_Projects/Twitter_Trends/word_matrix.R')
+View(word_vector)
+View(word_vector)
+id_supply <- function(df){
+arr <- df$keywords
+set.seed(42)
+word_vector <- vector()
+temp_vec<- vector()
+temp_vec2<- vector()
+for(i in 1:length(arr)){
+word_vector<- df$keywords[[i]]
+temp_vec <- word_vector
+}
+temp_vec2 <- cbind(temp_vec,temp_vec2)
+return(word_vector)
+}
+id_supply(mat)
+id_supply(mat)
+id_supply <- function(df){
+arr <- df$keywords
+set.seed(42)
+word_vector <- vector()
+temp_vec<- vector()
+temp_vec2<- vector()
+for(i in 1:length(arr)){
+word_vector<- df$keywords[[i]]
+temp_vec <- word_vector
+}
+temp_vec2 <- cbind(temp_vec,temp_vec2)
+return(word_vector)
+}
+debugSource('F:/R_Projects/Twitter_Trends/word_matrix.R')
+id_supply(mat)
+id_supply <- function(df){
+arr <- df$keywords
+set.seed(42)
+word_vector <- vector()
+temp_vec<- vector()
+temp_vec2<- vector()
+for(i in 1:length(arr)){
+word_vector<- df$keywords[[i]]
+temp_vec2 <- cbind(temp_vec,word_vector)
+temp_vec <- temp_vec2
+}
+return(word_vector)
+}
+id_supply(mat)
+id_supply(mat)
+id_supply <- function(df){
+arr <- df$keywords
+set.seed(42)
+word_vector <- vector()
+temp_vec<- vector()
+temp_vec2<- vector()
+for(i in 1:length(arr)){
+word_vector<- df$keywords[[i]]
+temp_vec2 <- cbind(temp_vec,word_vector)
+temp_vec <- temp_vec2
+}
+return(word_vector)
+}
+id_supply(mat)
+id_supply <- function(df){
+arr <- df$keywords
+set.seed(42)
+word_vector <- vector()
+temp_vec<- vector()
+temp_vec2<- vector()
+for(i in 1:length(arr)){
+word_vector<- df$keywords[[i]]
+temp_vec2 <- cbind(temp_vec,word_vector)
+temp_vec <- temp_vec2
+}
+return(word_vector)
+}
+id_supply(mat)
+id_supply(mat)
+arr<- mat$keywords
+arr[[1]]
+arr[[76]]
+word_vector<-vector()
+word_vector<- arr[[1]]
+View(word_vector)
+temp1 <- vector()
+temp1 <- arr[[2]]
+temp2 <- cbind(word_vector,temp1)
+temp2 <- rbind(word_vector,temp1)
+View(temp1)
+View(word_vector)
+temp2 <- rbind(temp1,word_vector)
+temp2 <- rbind(temp1,word_vector,row.names=FALSE)
+row.names(word_vector)<-NULL
+row.names(temp1)<-NULL
+row.names(word_vector)<-NULL
+temp2 <- rbind(temp1,word_vector)
+View(temp1)
+row.names(temp1) <- NULL
+View(temp1)
+temp2<-rbind.data.frame(temp1,word_vector)
+temp2<-rbind.data.frame(temp1[1:8],word_vector[1:8])
+temp1[1:]
+temp1$sentiment
+word_vector<-data.frame()
+word_vector<- arr[[21]]
+word_vector<- arr[[1]]
+temp1<-data.frame()
+temp1<- arr[[2]]
+temp2<- data.frame()
+temp2<- rbind(word_vector,temp1)
+temp2<- cbind(word_vector,temp1)
+`row.names<-`(temp1,NULL)
+`row.names<-`(word_vector,NULL)
+temp2<- cbind(word_vector,temp1)
+temp2<- rbind(word_vector,temp1)
+temp1$text
+temp1$text[1]
+temp1$sentiment[1]
+temp1$sentiment[2]
+temp1$emotion
+unlist(temp1)
+temp_4 <- as.data.frame(unlist(temp1))
+View(temp_4)
+temp_4 <- as.data.frame(t(unlist(temp1)))
+temp_4 <- as.data.frame(t(unlist(temp1$sentiment)))
+temp_4 <- as.data.frame((unlist(temp1$sentiment)))
+temp_5 <- as.data.frame(unlist(temp1$emotion))
+View(temp_5)
+temp2<- data.frame()
+temp_4<- data.frame()
+temp_3<- data.frame()
+temp_5<- data.frame()
+temp_3<- do.call(word_vector,unlist(word_vector$sentiment,word_vector$emotion,recursive = FALSE))
+temp_3<- do.call(word_vector,unlist(word_vector$sentiment,recursive = FALSE))
+temp_3<- do.call(c,unlist(word_vector,recursive = FALSE))
+temp_3
+typeof(temp_3)
+as.data.frame(temp_3)
+temp_4<-as.data.frame(temp_3)
+View(temp_4)
+temp_4<-t(as.data.frame(temp_3))
+temp_4[2]
+flattenlist <- function(x){
+morelists <- sapply(x, function(xprime) class(xprime)[1]=="list")
+out <- c(x[!morelists], unlist(x[morelists], recursive=FALSE))
+if(sum(morelists)){
+Recall(out)
+}else{
+return(out)
+}}
+flattenlist <- function(x){
+morelists <- sapply(x, function(xprime) class(xprime)[1]=="list")
+out <- c(x[!morelists], unlist(x[morelists], recursive=FALSE))
+if(sum(morelists)){
+Recall(out)
+}else{
+return(out)
+}
+}
+flattenlist(word_vector)
+temp_5<-as.data.frame(flattenlist(word_vector))
+View(temp_5)
+View(word_vector)
+temp_5$emotion.sadness
+temp_5$emotion.sadness[2]
+View(mat)
+View(word_vector)
+View(temp_5)
+word_vector_2 <- arr[[2]]
+View(word_vector_2)
+word_vector_2<- flattenlist(word_vector_2)
+word_vector<- flattenlist(word_vector)
+temp2 <- rbind2(word_vector,word_vector_2)
+View(temp2)
+temp2 <- rbind(word_vector,word_vector_2)
+temp2 <- cbind(word_vector,word_vector_2)
+word_vector<- flattenlist(word_vector)
+View(temp_4)
+View(tarzan)
+flatten_Tweet_list <- function(df){
+morelists <- sapply(df, function(xprime) class(xprime)[1]=="list")
+out <- c(df[!morelists], unlist(df[morelists], recursive=FALSE))
+if(sum(morelists)){
+Recall(out)
+}else{
+return(out)
+}
+}
+word_vector<- flatten_Tweet_list(arr[[1]])
+word_vector<- as.data.frame(flatten_Tweet_list(arr[[1]]))
+View(word_vector)
+word_vector_2<- as.data.frame(flatten_Tweet_list(arr[[2]]))
+temp2 <- rbind(word_vector,word_vector_2)
+View(temp2)
+View(id_supply)
+View(mat)
+View(mat)
+length(arr)
+# arr <- df$keywords
+# where df is dataframe containing result from watson NLU json
+# tweet_keyword_vector_1<- as.data.frame(flatten_Tweet_list( arr[[1]] ))
+# tweet_keyword_vector_2<- as.data.frame(flatten_Tweet_list( arr[[2]] ))
+# create_Keyword_matrix <- rbind(tweet_keyword_vector_1, tweet_keyword_vector_2)
+# create_Keyword_matrix <- rbind(create_Keyword_matrix, tweet_keyword_vector_3)
+word_matrix<- function(df){
+create_Keyword_matrix <- data.frame()
+for(i in 1:length(df)){
+tweet_keyword_vector <- as.data.frame(flatten_Tweet_list(df[[i]]))
+create_Keyword_matrix<- rbind(create_Keyword_matrix,tweet_keyword_vector)
+}
+return(create_Keyword_matrix)
+}
+word_matrix(arr)
+# arr <- df$keywords
+# where df is dataframe containing result from watson NLU json
+# tweet_keyword_vector_1<- as.data.frame(flatten_Tweet_list( arr[[1]] ))
+# tweet_keyword_vector_2<- as.data.frame(flatten_Tweet_list( arr[[2]] ))
+# create_Keyword_matrix <- rbind(tweet_keyword_vector_1, tweet_keyword_vector_2)
+# create_Keyword_matrix <- rbind(create_Keyword_matrix, tweet_keyword_vector_3)
+word_matrix<- function(){
+create_Keyword_matrix <- data.frame()
+for(i in 1:length(arr)){
+tweet_keyword_vector <- as.data.frame(flatten_Tweet_list(arr[[i]]))
+create_Keyword_matrix<- rbind(create_Keyword_matrix,tweet_keyword_vector)
+}
+return(create_Keyword_matrix)
+}
+word_matrix(arr)
+word_matrix()
+word_matrix()
+debugSource('F:/R_Projects/Twitter_Trends/word_matrix.R')
+word_matrix()
+word_matrix()
+arr[[14]]
+word_matrix<- function(){
+create_Keyword_matrix <- data.frame()
+for(i in 1:length(arr)){
+if( !is.null(arr[[i]])){
+tweet_keyword_vector <- as.data.frame(flatten_Tweet_list(arr[[i]]))
+create_Keyword_matrix<- rbind(create_Keyword_matrix,tweet_keyword_vector)
+}
+}
+return(create_Keyword_matrix)
+}
+word_matrix()
+debugSource('F:/R_Projects/Twitter_Trends/word_matrix.R', echo=TRUE)
+word_matrix()
+View(create_Keyword_matrix)
+arr[[34]]
+arr[[35]]
+arr[[36]]
+View(mat)
+length(arr[[36]])
+# arr <- df$keywords
+# where df is dataframe containing result from watson NLU json
+# tweet_keyword_vector_1<- as.data.frame(flatten_Tweet_list( arr[[1]] ))
+# tweet_keyword_vector_2<- as.data.frame(flatten_Tweet_list( arr[[2]] ))
+# create_Keyword_matrix <- rbind(tweet_keyword_vector_1, tweet_keyword_vector_2)
+# create_Keyword_matrix <- rbind(create_Keyword_matrix, tweet_keyword_vector_3)
+word_matrix<- function(){
+create_Keyword_matrix <- data.frame()
+for(i in 1:length(arr)){
+if( !is.null(arr[[i]]) & length(arr[[i]])!=0){
+tweet_keyword_vector <- as.data.frame(flatten_Tweet_list(arr[[i]]))
+create_Keyword_matrix<- rbind(create_Keyword_matrix,tweet_keyword_vector)
+}
+}
+return(create_Keyword_matrix)
+}
+word_matrix()
+# arr <- df$keywords
+# where df is dataframe containing result from watson NLU json
+# tweet_keyword_vector_1<- as.data.frame(flatten_Tweet_list( arr[[1]] ))
+# tweet_keyword_vector_2<- as.data.frame(flatten_Tweet_list( arr[[2]] ))
+# create_Keyword_matrix <- rbind(tweet_keyword_vector_1, tweet_keyword_vector_2)
+# create_Keyword_matrix <- rbind(create_Keyword_matrix, tweet_keyword_vector_3)
+create_Keyword_matrix <- data.frame()
+word_matrix<- function(){
+for(i in 1:length(arr)){
+if( !is.null(arr[[i]]) & length(arr[[i]])!=0){
+tweet_keyword_vector <- as.data.frame(flatten_Tweet_list(arr[[i]]))
+create_Keyword_matrix<- rbind(create_Keyword_matrix,tweet_keyword_vector)
+}
+}
+return(create_Keyword_matrix)
+}
+word_matrix()
+# arr <- df$keywords
+# where df is dataframe containing result from watson NLU json
+# tweet_keyword_vector_1<- as.data.frame(flatten_Tweet_list( arr[[1]] ))
+# tweet_keyword_vector_2<- as.data.frame(flatten_Tweet_list( arr[[2]] ))
+# create_Keyword_matrix <- rbind(tweet_keyword_vector_1, tweet_keyword_vector_2)
+# create_Keyword_matrix <- rbind(create_Keyword_matrix, tweet_keyword_vector_3)
+word_matrix<- function(){
+create_Keyword_matrix <- data.frame()
+for(i in 1:length(arr)){
+if( !is.null(arr[[i]]) & length(arr[[i]])!=0){
+tweet_keyword_vector <- as.data.frame(flatten_Tweet_list(arr[[i]]))
+create_Keyword_matrix<- rbind(create_Keyword_matrix,tweet_keyword_vector)
+}
+}
+return(create_Keyword_matrix)
+}
+# arr <- df$keywords
+# where df is dataframe containing result from watson NLU json
+# tweet_keyword_vector_1<- as.data.frame(flatten_Tweet_list( arr[[1]] ))
+# tweet_keyword_vector_2<- as.data.frame(flatten_Tweet_list( arr[[2]] ))
+# create_Keyword_matrix <- rbind(tweet_keyword_vector_1, tweet_keyword_vector_2)
+# create_Keyword_matrix <- rbind(create_Keyword_matrix, tweet_keyword_vector_3)
+word_matrix<- function(df){
+create_Keyword_matrix <- data.frame()
+for(i in 1:length(df)){
+if( !is.null(df[[i]]) & length(df[[i]])!=0){
+tweet_keyword_vector <- as.data.frame(flatten_Tweet_list(df[[i]]))
+create_Keyword_matrix<- rbind(create_Keyword_matrix,tweet_keyword_vector)
+}
+}
+return(create_Keyword_matrix)
+}
+create_Keyword_matrix <- word_matrix(arr)
+View(create_Keyword_matrix)
+savehistory("F:/R_Projects/Twitter_Trends/history.txt")
