@@ -33,7 +33,7 @@ ui <- fluidPage(
     )
     )
 
-searchTerm <- "#dosa OR dosa"
+searchTerm <- "#food OR Food"
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   twitt_df <- twitter_stuff(searchTerm,1000)
@@ -43,7 +43,7 @@ server <- function(input, output) {
   bind_Signal_to_df<-data.frame()
   #choose columns to display
     jsonSignal<-give_me_a_json_damnit(df, bind_Signal, bind_Signal_to_df)
-    
+    write.table(x = jsonSignal, file= "jsonSignal_TweetID.csv",append = TRUE,row.names = FALSE ,quote = FALSE)
     output$table_summary<- DT::renderDataTable({DT::datatable(jsonSignal)})
     output$table_tweets<- DT::renderDataTable({DT::datatable(df,
                           options = list(lengthMenu = c(50, 300, 500)))})

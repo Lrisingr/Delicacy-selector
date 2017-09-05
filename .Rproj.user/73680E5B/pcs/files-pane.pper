@@ -1,6 +1,10 @@
 {
-    "path" : "F:/R_Projects/Twitter_Trends/Tweet_Data",
+    "path" : "F:/R_Projects/Twitter_Trends",
     "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
         {
             "ascending" : true,
             "columnIndex" : 2

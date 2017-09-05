@@ -2,21 +2,6 @@
     "debugBreakpointsState" : {
         "breakpoints" : [
             {
-                "editor_line_number" : 42,
-                "editor_state" : 1,
-                "function_name" : "toplevel",
-                "function_steps" : "",
-                "id" : 2,
-                "is_package_breakpoint" : false,
-                "is_pending_debug_completion" : false,
-                "line_number" : 42,
-                "needs_updated_steps" : true,
-                "package_name" : "",
-                "path" : "F:/R_Projects/Twitter_Trends/Tweet_Data/app.R",
-                "state" : 1,
-                "type" : 1
-            },
-            {
                 "editor_line_number" : 6,
                 "editor_state" : 1,
                 "function_name" : "toplevel",
