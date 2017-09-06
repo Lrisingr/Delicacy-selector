@@ -2,19 +2,34 @@
     "debugBreakpointsState" : {
         "breakpoints" : [
             {
-                "editor_line_number" : 6,
+                "editor_line_number" : 39,
                 "editor_state" : 1,
                 "function_name" : "toplevel",
                 "function_steps" : "",
-                "id" : 3,
+                "id" : 5,
                 "is_package_breakpoint" : false,
                 "is_pending_debug_completion" : false,
-                "line_number" : 6,
-                "needs_updated_steps" : true,
+                "line_number" : 39,
+                "needs_updated_steps" : false,
                 "package_name" : "",
                 "path" : "F:/R_Projects/Twitter_Trends/Tweet_Data/app.R",
                 "state" : 1,
                 "type" : 1
+            },
+            {
+                "editor_line_number" : 5,
+                "editor_state" : 1,
+                "function_name" : "give_me_a_json_damnit",
+                "function_steps" : "2",
+                "id" : 6,
+                "is_package_breakpoint" : false,
+                "is_pending_debug_completion" : false,
+                "line_number" : 5,
+                "needs_updated_steps" : true,
+                "package_name" : "",
+                "path" : "F:/R_Projects/Twitter_Trends/Watson_NLU.R",
+                "state" : 1,
+                "type" : 0
             }
         ]
     }

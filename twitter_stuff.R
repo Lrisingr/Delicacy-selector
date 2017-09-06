@@ -1,8 +1,6 @@
 #add twitter keyword as input parameter from shiny textbox at later stage 
 library(twitteR)
 library(plyr)
-
-
 twitter_stuff<- function(searchTerm, numTweets){
   #Setup the Twitter Account and pass the tokens
   setup_twitter_oauth(APIKey,APISecret,accessToken,accessTokenSecret)

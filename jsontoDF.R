@@ -1,5 +1,24 @@
 library(jsonlite)
-jsontoDF<- jsonlite::fromJSON(txt = "Tweet_Data/data.json")
+library(rjson)
+library(RJSONIO)
+library(jsonlite)
+
+raw <- readLines("Signal_asTxt.txt",encoding="UTF-8")
+file_json = "Final_JSON.json"
+
+# get rid of the "/* 0 */" lines
+json <- grep("^/\\* [0-9]* \\*/", raw, value = TRUE, invert = TRUE)
+
+# add missing comma after }
+n <- length(json)
+json[-n] <- gsub("^}$", "},", json[-n])
+
+# add brakets at the beginning and end
+JSON.complete<- c("[", json, "]")
+
+write(JSON.complete,file = file_json,append = TRUE)
+
+jsontoDF<- jsonlite::fromJSON(file=file_json)
 
 # call flatten_tweet_list and create_Keyword_matrix on jsontoDF
 
@@ -38,6 +57,5 @@ create_Keyword_matrix<- function(df){
   }
   return(word_matrix)
 }
-
 
 keywords_matrix<- create_Keyword_matrix(keyword_arr)
