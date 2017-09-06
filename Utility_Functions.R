@@ -1,16 +1,25 @@
-#UTILITY FUNCTIONS TO CLEAN UP THE DATA 
+library(digest)
 
-try.tolower = function(x)
-{ 
+
+#UTILITY FUNCTIONS TO CLEAN UP THE DATA
+
+# sets CERT Global to make a CA Cert go away
+# http://stackoverflow.com/questions/15347233/ssl-certificate-failed-for-twitter-in-r
+housekeeping <- function(){
+  options(RCurlOptions = list(cainfo = system.file("CurlSSL", "cacert.pem", package = "RCurl")))
+  Sys.setlocale(locale="C") # error: input string 1 is invalid in this locale
+  options(warn=-1) # careful - turns off warnings
+}
+
+try.tolower <- function(x){
   y = NA
   try_error = tryCatch(tolower(x), error=function(e) e)
   if (!inherits(try_error, "error"))
     y = tolower(x)
-  return(y) 
+  return(y)
 }
-## Clean up junk from text 
-clean.text <- function(tweet_data)
-  {
+## Clean up junk from text
+clean.text <- function(tweet_data){
   tweet_data = gsub("(RT|via)((?:\\b\\W*@\\w+)+)", "", tweet_data)
   tweet_data = gsub("@\\w+", "", tweet_data)
   tweet_data = gsub("[[:punct:]]", "", tweet_data)
@@ -25,13 +34,9 @@ clean.text <- function(tweet_data)
   return(tweet_data)
 }
 
-# Encryption function 
-
-library(digest)
-#write encrypted data to a file 
-
+# Encryption function
+#write encrypted data to a file
 write.aes <- function(df,filename, key) {
-  
   require(digest)
   zz <- textConnection("out","w")
   write.csv(df,zz, row.names=F)
@@ -41,7 +46,7 @@ write.aes <- function(df,filename, key) {
   raw <- c(raw,as.raw(rep(0,16-length(raw)%%16)))
   aes <- AES(key,mode="ECB")
   aes$encrypt(raw)
-  writeBin(aes$encrypt(raw),filename)  
+  writeBin(aes$encrypt(raw),filename)
 }
 # read encypted data frame from file
 read.aes <- function(filename,key) {
@@ -54,4 +59,4 @@ read.aes <- function(filename,key) {
 }
 
 key <- as.raw( sample(1:16, 16))
-save(key,file = "key.RData") 
+save(key,file = "key.RData")

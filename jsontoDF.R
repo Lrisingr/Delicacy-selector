@@ -1,50 +1,48 @@
 library(jsonlite)
 library(rjson)
 library(RJSONIO)
-library(jsonlite)
 
-raw <- readLines("Signal_asTxt.txt",encoding="UTF-8")
-file_json = "Final_JSON.json"
-
+format.JSON<- function(filepath){
+  raw <- readLines("Signal_asTxt.txt",encoding="UTF-8")
 # get rid of the "/* 0 */" lines
 json <- grep("^/\\* [0-9]* \\*/", raw, value = TRUE, invert = TRUE)
-
 # add missing comma after }
 n <- length(json)
 json[-n] <- gsub("^}$", "},", json[-n])
-
 # add brakets at the beginning and end
 JSON.complete<- c("[", json, "]")
+write(JSON.complete,file = filepath,append = TRUE)
 
-write(JSON.complete,file = file_json,append = TRUE)
+}
+filepath = "Final_JSON.json"
+format.JSON(filepath)
 
 jsontoDF<- jsonlite::fromJSON(file=file_json)
 
 # call flatten_tweet_list and create_Keyword_matrix on jsontoDF
 
-#pass tweet_list$keyword data frame and get individual values , 
+#pass tweet_list$keyword data frame and get individual values ,
 # before passing this function to  mat<-jsontoDF$keywords, jsontoDF$sentiment and jsontoDF$emotion are lists nested within jsontoDF$keywords list , so to flatenn everything for each keyword in the specific tweet use the below function
 
-flatten_Tweet_list <- function(df){  
+flatten_Tweet_list <- function(df){
   morelists <- sapply(df, function(xprime) class(xprime)[1]=="list")
   out <- c(df[!morelists], unlist(df[morelists], recursive=FALSE))
-  if(sum(morelists)){ 
+  if(sum(morelists)){
     Recall(out)
   }else{
     return(out)
   }
 }
- keyword_arr <- jsontoDF$keywords 
- 
-# where df is dataframe containing result from watson NLU json 
+ keyword_arr <- jsontoDF$keywords
+
+# where df is dataframe containing result from watson NLU json
 
 # tweet_keyword_vector_1<- as.data.frame(flatten_Tweet_list( keyword_arr[[1]] ))
 # tweet_keyword_vector_2<- as.data.frame(flatten_Tweet_list( keyword_arr[[2]] ))
 # create_Keyword_matrix <- rbind(tweet_keyword_vector_1, tweet_keyword_vector_2)
 # create_Keyword_matrix <- rbind(create_Keyword_matrix, tweet_keyword_vector_3)
 
-
-# Need to assign a unique ID for each word(string) 
+# Need to assign a unique ID for each word(string)
 #and it's respective tweet ID where that word came from
 
 create_Keyword_matrix<- function(df){
