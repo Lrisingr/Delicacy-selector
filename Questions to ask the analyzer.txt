@@ -1,0 +1,22 @@
+What is the contribution of number of Tweets over day(posted time) by sentiment
+
+what is the trend of Retweet count over Day (Posted time) by Matching Hashtags
+
+What is the number of Author name by Author country
+
+What is the relationship between author follower count and author friend count by author name
+
+break down of Author tweet count by year(Posted time) and author city
+
+how does the number of tweet compare by matching hashtags by sentiment
+
+what is the contribution of Retweet count over Day by sentiment
+
+Even if the app suggests the place where the food is good , can we suggest a user what dish is good at a particular restaurant he sat?
+
+Warning in doRppAPICall("search/tweets", n, params = params, retryOnRateLimit = retryOnRateLimit,  :
+  2000 tweets were requested but the API can only return 238
+  
+  What if the tweet doesnt have any sentiments?
+  something like "daypizza project pizza food foodie lunch costco fattypepperoni cheese"
+  

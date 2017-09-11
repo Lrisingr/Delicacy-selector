@@ -2,8 +2,8 @@ library(jsonlite)
 library(rjson)
 library(RJSONIO)
 
-format.JSON<- function(filepath){
-  raw <- readLines("Signal_asTxt.txt",encoding="UTF-8")
+format.JSON<- function(readFrom, writeTo){
+  raw <- readLines(readFrom,encoding="UTF-8")
 # get rid of the "/* 0 */" lines
 json <- grep("^/\\* [0-9]* \\*/", raw, value = TRUE, invert = TRUE)
 # add missing comma after }
@@ -11,13 +11,16 @@ n <- length(json)
 json[-n] <- gsub("^}$", "},", json[-n])
 # add brakets at the beginning and end
 JSON.complete<- c("[", json, "]")
-write(JSON.complete,file = filepath,append = TRUE)
+write(JSON.complete,file = writeTo,append = TRUE)
 
 }
-filepath = "Final_JSON.json"
-format.JSON(filepath)
 
-jsontoDF<- jsonlite::fromJSON(file=file_json)
+readFrom = "Tweet_Data/NLU_response.txt"
+writeTo = "Tweet_Data/Final_JSON.json"
+format.JSON(readFrom, writeTo)
+
+jsontoDF<- jsonlite::fromJSON(txt = writeTo)
+jsontoDF<-subset(jsontoDF,is.na(jsontoDF$code))
 
 # call flatten_tweet_list and create_Keyword_matrix on jsontoDF
 
@@ -44,16 +47,20 @@ flatten_Tweet_list <- function(df){
 
 # Need to assign a unique ID for each word(string)
 #and it's respective tweet ID where that word came from
-
+ word_matrix <- data.frame()
+ word_matrix_1 <- data.frame()
 create_Keyword_matrix<- function(df){
-  word_matrix <- data.frame()
+  
   for(i in 1:length(df)){
     if( !is.null(df[[i]]) & length(df[[i]])!=0){
       tweet_keyword_vector <- as.data.frame(flatten_Tweet_list(df[[i]]))
       word_matrix<- rbind(word_matrix,tweet_keyword_vector)
+      word_matrix_1<- rbindlist(word_matrix_1,tweet_keyword_vector, fill=TRUE,use.names = FALSE)
     }
+    
   }
-  return(word_matrix)
+  return(word_matrix_1)
 }
 
-keywords_matrix<- create_Keyword_matrix(keyword_arr)
+keywords_matrix<- create_Keyword_matrix(flattended.keywordarr)
+

@@ -14,7 +14,7 @@ ui <- fluidPage(
           sidebarPanel(
               conditionalPanel('input.dataset === "df"',
                   checkboxGroupInput("show_vars", 
-                                     "Tweet DB columns",
+                                     "Tweet selectors",
                                       names(df), 
                                       selected = names(df)))),
     
@@ -28,21 +28,20 @@ ui <- fluidPage(
       tabsetPanel(id = 'dataset',
                   tabPanel("table_summary", DT::dataTableOutput("table_summary")),
                   tabPanel("df",DT::dataTableOutput("table_tweets"))
-                 )
-      )
-    )
-    )
+                 ))))
 
-searchTerm <- "#food OR Food"
+
+searchTerm <- "#Dosa OR Dosa"
+twitt_df<- data.frame()
+
+
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   twitt_df <- twitter_stuff(searchTerm,500)
   twFeed_csv<- write.csv(twitt_df,file = "savedTweets.csv",append = TRUE)
   df = twitt_df[sample(nrow(twitt_df),500),]
-  bind_Signal <- data.frame() #take tweet id from tweet dataframe and bind POST content with the tweet_id
-  bind_Signal_to_df<-data.frame()
   #choose columns to display
-    jsonSignal<-NLU.results(df, bind_Signal, bind_Signal_to_df)
+    jsonSignal<-NLU.results(df)
     write.csv(x = jsonSignal, file= "jsonSignal_TweetID.csv",append = TRUE)
     output$table_summary<- DT::renderDataTable({DT::datatable(jsonSignal)})
     output$table_tweets<- DT::renderDataTable({DT::datatable(df,

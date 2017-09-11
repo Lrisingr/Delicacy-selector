@@ -8,9 +8,9 @@
 
 # Conversation for CHATBOTS and stuff
 
-username_conversation <- "3979237a-0f1d-4d69-a729-6504a1879dc7"
-password_conversation <- "SqXHy5YjGrG6"
-uname_pswd_conversation = paste(username_conversation,":",password_conversation)
+# username_conversation <- "3979237a-0f1d-4d69-a729-6504a1879dc7"
+# password_conversation <- "SqXHy5YjGrG6"
+# uname_pswd_conversation = paste(username_conversation,":",password_conversation)
 
 #NLU is integrated with Alchemy now
 
@@ -21,10 +21,10 @@ uname_pswd_conversation = paste(username_conversation,":",password_conversation)
 
 #Discovery service
   
-  url_disc <- "https://gateway.watsonplatform.net/discovery/api"
-  username_disc <- "b27e1b7a-82b0-4758-81a2-fb57f986fa53"
-  password_disc<- "Ev4AsBQUESVn"
-  uname_pswd_discovery <- paste(username_disc,":",password_disc)
+  # url_disc <- "https://gateway.watsonplatform.net/discovery/api"
+  # username_disc <- "b27e1b7a-82b0-4758-81a2-fb57f986fa53"
+  # password_disc<- "Ev4AsBQUESVn"
+  # uname_pswd_discovery <- paste(username_disc,":",password_disc)
 
   #Twitter API Keys
   
@@ -33,8 +33,8 @@ uname_pswd_conversation = paste(username_conversation,":",password_conversation)
   accessToken= "67590362-X5tZo4D5HxEZEhNXwZyAh2aYkkShapfODD7nMmor1"
   accessTokenSecret = "rAw9N0igklgBmOpInLNdvrxGByogTHfaHObIzqWagJJN3"
   
-  assign(APIKey,value = "APIKey",envir = .GlobalEnv)
-  assign(APISecret,value = "APISecret",envir = .GlobalEnv)
-  assign(accessToken,value = "accessToken",envir = .GlobalEnv)
-  assign(accessTokenSecret,value = "accessTokenSecret",envir = .GlobalEnv)
-  
+  # assign(APIKey,value = "APIKey",envir = .GlobalEnv)
+  # assign(APISecret,value = "APISecret",envir = .GlobalEnv)
+  # assign(accessToken,value = "accessToken",envir = .GlobalEnv)
+  # assign(accessTokenSecret,value = "accessTokenSecret",envir = .GlobalEnv)
+  # 

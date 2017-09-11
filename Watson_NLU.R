@@ -2,9 +2,11 @@ library(httr)
 library(jsonlite)
 url_NLU="https://gateway.watsonplatform.net/natural-language-understanding/api"
 version="?version=2017-02-27"
-jsonFile = "jsonFile.json"
 
-NLU.results<- function(data_frame,bind_id_with_Signal,Bind.tID.Signal)
+Bind.tID.Signal<-data.frame()
+#take tweet id from tweet dataframe and bind POST content with the tweet_id
+bind_id_with_Signal <- data.frame() 
+NLU.results<- function(data_frame)
   {
     for(i in 1:length(data_frame$text))
     {
@@ -16,15 +18,16 @@ NLU.results<- function(data_frame,bind_id_with_Signal,Bind.tID.Signal)
                                   "/v1/analyze",
                                   version,
                                   "&text=",encoded_text,
-                                  "&features=keywords,entities,categories",
+                                  "&features=concepts,keywords,entities,categories",
                                   "&entities.emotion=true",
                                   "&entities.sentiment=true",
                                   "&keywords.emotion=true",
                                   "&keywords.sentiment=true",
-                                  sep=""),encode = "json",
+                                  sep=""),
                                   authenticate(username_NLU,password_NLU),
                                   add_headers("Content-Type"="application/json"))
       #Take the POST json and read the content as text or as default json
+      if(response$status_code == 200){
       Signal <- content(response)
       Signal.asTxt<- content(response,as = "text")
       Signal.JSON <- toJSON(Signal)
@@ -36,6 +39,6 @@ NLU.results<- function(data_frame,bind_id_with_Signal,Bind.tID.Signal)
       colnames(Bind.tID.Signal)[2]<- "JsonContent"
       #Just convert the Signal to JSON for future use 
       write(Signal.JSON,file = "NLU_results.json",append = TRUE)
-  }
+  }}
   return(Bind.tID.Signal)
 }  
