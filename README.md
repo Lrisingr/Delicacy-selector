@@ -24,14 +24,14 @@ Through this application, we are trying to utilize the data from three different
 
 ## Approaching the problem: 
 
-*Analyze text based on what the user has searched for in the textbox "What food are you in mood for today?".
+* Analyze text based on what the user has searched for in the textbox "What food are you in mood for today?".
 The text is either fed as a Hashtag/term/user in the twitter. 
 Metadata such as  entities, keywords, categories, relations and semantic roles, sentiment and emotion are extracted from the content as they provide insights on tweets posted in the Twitter. 
 After verifying whether the posted term is in a tweet and belong to the category "Food",  which is one of the primary categories in IBM Watson's category classifier, we filter and approximate the location , keywords familiar or tag along with the searched term. 
 
-*Similarly gathering the data from Yelp through the API available, gather reviews based on the restaurant. Since not all reviews are equal in favor of the dish , to weigh the true dish value ,and in loss of expertise reviews we consider many other factors and aggregat them. We search for past tweets/reviews from twitter and yelp respectively posted by food critics. Their reviews are assigned a major weight compared to the other reviews.
+* Similarly gathering the data from Yelp through the API available, gather reviews based on the restaurant. Since not all reviews are equal in favor of the dish , to weigh the true dish value ,and in loss of expertise reviews we consider many other factors and aggregat them. We search for past tweets/reviews from twitter and yelp respectively posted by food critics. Their reviews are assigned a major weight compared to the other reviews.
 
-*Using the endpoints provided by the Watson API , we can gain personality insights and analyze text for yelp data too.
+* Using the endpoints provided by the Watson API , we can gain personality insights and analyze text for yelp data too.
 
 ## Conclusion
 The end result would be calculating , if the restaurant or location has been mentioned in any tweet , tweet's emotion and sentiment
