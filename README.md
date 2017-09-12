@@ -1,4 +1,4 @@
-# Delicacy-selector
+# élelmiszer MAD
 MAD utilizes distinct features from IBM watson using R and Python and display latest trends,statistics from social media accounts
 
 ### Few words from Andrew Zimmern a food traveler and critic. 
